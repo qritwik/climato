@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rel_lay2"
+
+    android:background="#000000"
+    tools:context="com.library.apple.weather.Display">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:elevation="4dp"
+        android:layout_marginTop="25dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+        android:background="@android:color/transparent"></android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:verticalScrollbarPosition="defaultPosition"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/round_r6"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/lll1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/avg_temp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:text="38"
+        android:textColor="#ffffff"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="30dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/toolbar"
+                    android:text="c"
+                    android:textColor="#ffffff"
+                    android:fontFamily="serif"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+
+            </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/city1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/avg_temp1"
+        android:text="Bangalore"
+        android:textColor="#ffffff"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textSize="18dp"
+
+        android:layout_marginLeft="16dp"/>
+
+            <TextView
+                android:id="@+id/today1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/avg_temp1"
+                android:text="Today"
+                android:textColor="#ffffff"
+                android:layout_marginTop="8dp"
+                android:fontFamily="serif"
+                android:textSize="14.5dp"
+                android:layout_marginLeft="16dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/max_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="33"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="|"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/min_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="26"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/suniiio"/>
+
+            <TextView
+                android:id="@+id/type1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_centerVertical="true"
+                android:layout_below="@id/image_view"
+                android:text="Sunny"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/lkk"
+        android:layout_width="match_parent"
+        android:layout_height="0.001dp"
+        android:layout_below="@id/lll1"
+        android:background="#ffffff"
+        android:layout_marginLeft="16.5dp"
+        android:layout_marginTop="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/lkk"
+
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Humidity"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="16.5dp"
+                android:fontFamily="serif"
+                android:textSize="16dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="127.6"
+                android:textColor="#ffffff"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:fontFamily="serif"
+                android:textSize="16dp"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.001dp"
+            android:layout_marginLeft="16.5dp"
+            android:background="#ffffff"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="16.5dp"
+                android:text="Precipitation"
+                android:fontFamily="serif"
+                android:textSize="16dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/preci"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="127.6"
+                    android:textColor="#ffffff"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="25dp"
+                    android:fontFamily="serif"
+                    android:textSize="16dp"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="#ffffff"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sunrise"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="16.5dp"
+                android:fontFamily="serif"
+                android:textSize="16dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/sunrise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="127.6"
+                    android:textColor="#ffffff"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="25dp"
+                    android:fontFamily="serif"
+                    android:textSize="16dp"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.001dp"
+            android:layout_marginLeft="16.5dp"
+            android:background="#ffffff"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#e0e0e0"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginLeft="16.5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sunset"
+                android:textColor="#ffffff"
+                android:fontFamily="serif"
+                android:textSize="16dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/sunset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="127.6"
+                    android:textColor="#ffffff"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="25dp"
+                    android:fontFamily="serif"
+                    android:textSize="16dp"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginLeft="16.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.001dp"
+            android:background="#ffffff"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginLeft="16.5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Moonrise"
+                android:textColor="#ffffff"
+                android:fontFamily="serif"
+                android:textSize="16dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/moonrise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="127.6"
+                    android:textColor="#ffffff"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="25dp"
+                    android:fontFamily="serif"
+                    android:textSize="16dp"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginLeft="16.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.001dp"
+            android:background="#ffffff"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginLeft="16.5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Moonset"
+                android:textColor="#ffffff"
+                android:fontFamily="serif"
+                android:textSize="16dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/moonset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="25dp"
+                    android:fontFamily="serif"
+                    android:text="127.6"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

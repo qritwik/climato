@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/col1"
+    android:fitsSystemWindows="true"
+    android:background="#000000"
+    android:layout_height="match_parent"
+    tools:context="com.library.apple.weather.MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rel_lay1"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/li1"
+        android:layout_width="match_parent"
+
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="1.5dp"
+            android:background="@drawable/round_rx"
+            android:layout_marginLeft="7.5dp"
+            android:layout_marginRight="7.5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="37dp"
+            android:layout_marginBottom="3dp"
+            android:layout_height="wrap_content">
+
+
+
+        <fragment
+
+            android:id="@+id/place_autocomplete_fragment"
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+            />
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+<RelativeLayout
+    android:id="@+id/rvb1"
+    android:background="@drawable/round76"
+    android:layout_marginLeft="7.5dp"
+    android:layout_marginRight="7.5dp"
+   android:layout_marginTop="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_marginTop="20dp"
+
+    android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="1.5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="18dp"
+            android:orientation="horizontal"
+
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/temp_m"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="sans-serif-smallcaps"
+                android:textSize="75dp"
+
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textStyle="normal"
+                android:layout_marginLeft="5dp"
+                android:textSize="39dp"
+                android:fontFamily="serif"
+                android:text="C"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_front"
+                android:layout_width="80sp"
+                android:layout_marginLeft="25dp"
+
+                android:layout_centerVertical="true"
+                android:layout_height="80sp" />
+
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+</RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_marginBottom="4dp"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/type_m"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="16dp"
+
+                android:layout_width="wrap_content"
+                android:textStyle="italic"
+
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="16.8dp"
+                android:fontFamily="serif"
+                android:text=""/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_height="wrap_content">
+
+    <LinearLayout
+
+        android:id="@+id/ll2"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:orientation="horizontal"
+        android:layout_marginTop="2.5dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/city_m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:textColor="#ffffff"
+            android:text=""
+
+            android:textSize="16dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="30dp"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp"
+
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/state_w"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+
+                android:textSize="14.5dp"
+                android:fontFamily="sans-serif"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="14.5dp"
+                android:fontFamily="san-serif"
+                android:textStyle="bold"
+                android:layout_marginLeft="4dp"
+                android:text="|"/>
+
+
+            <TextView
+                android:id="@+id/country_w"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:textColor="#ffffff"
+                android:textSize="14.5dp"
+                android:fontFamily="san-serif"
+                android:textStyle="bold"
+                android:text="" />
+
+
+
+
+
+        </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+</LinearLayout>
+</RelativeLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_marginLeft="7.5dp"
+            android:layout_marginBottom="11dp"
+            android:layout_marginTop="10dp"
+            android:elevation="4dp"
+
+          android:background="@drawable/roundfr"
+            android:layout_marginRight="7.5dp"
+
+            android:id="@+id/card_forcast"
+            android:layout_below="@id/li1"
+            android:layout_height="48dp">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:fontFamily="sans-serif"
+                android:layout_height="wrap_content"
+                android:text="7 DAYS WEATHER FORECAST"/>
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+               <ImageView
+                   android:id="@+id/image_button_up"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:layout_marginRight="12dp"
+                   android:src="@drawable/ic_unfold_less_black_24dp"/>
+
+               </RelativeLayout>
+
+           </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+
+        android:layout_below="@id/card_forcast"
+        android:layout_width="match_parent"
+        android:paddingBottom="60dp"
+        android:clipToPadding="false"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+       >
+    </android.support.v7.widget.RecyclerView>
+
+
+        <!--<android.support.design.widget.FloatingActionButton-->
+            <!--android:id="@+id/fab_loc"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:backgroundTint="#19a96b"-->
+            <!--android:elevation="4dp"-->
+            <!--android:src="@drawable/ic_my_location_black_24dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_margin="16dp"/>-->
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="colorPrimaryDark">#1d2147</item>
+        <item name="colorAccent">#66000000</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="splash" parent="AppTheme">
+
+        <item name="colorPrimaryDark">#959a9d</item>
+
+    </style>
+
+
+
+    <style name="hour" parent="AppTheme">
+
+        <item name="android:textColorPrimary">#ffffff</item>
+        <item name="android:textColorSecondary">#ffffff</item>
+
+    </style>
+
+    <style name="display" parent="AppTheme">
+
+        <item name="colorPrimaryDark">#1d2147</item>
+
+        <item name="colorAccent">#66000000</item>
+        <item name="android:textColorPrimary">#ffffff</item>
+        <item name="android:textColorSecondary">#ffffff</item>
+
+
+    </style>
+
+</resources>
